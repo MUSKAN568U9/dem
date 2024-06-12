@@ -1,0 +1,124 @@
+html{
+    font-size: 62.5%;
+  
+}
+
+
+#nav{
+    background-color:rgb(255, 217, 0);
+    height: 9rem;
+}
+
+#nav:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px; /* Adjust the shadow size as needed */
+    width: 100%;
+    height: 1px; /* Adjust the shadow size as needed */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+    z-index: 1;
+    transition: background 0.3s ease;
+  }
+  
+  #nav.sticky:after {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)); /* Add shadow when scrolled */
+  }
+.navbar-brand img
+   {
+        width:6.0rem;
+        margin-left: 20rem;
+        /* width: 50px; Adjust the size as needed */
+        height: auto;
+        animation: rotateLogo 5s infinite linear; /* Adjust the animation duration and timing function as needed */
+      }
+    
+      @keyframes rotateLogo {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+   
+   
+ 
+    
+
+ul {
+    font-weight: 600;
+    position: absolute;
+    right:0;
+    padding: 2.0rem;
+
+    /* margin: auto; */
+    margin-right: 23rem
+ 
+}
+
+
+ul li a:hover{
+
+    border-bottom: 1px solid white;
+    cursor: pointer;
+   
+    
+
+}
+#home:hover{
+    color: white;
+}
+
+
+ #navbarNav ul li {
+    font-size: 1.5rem;
+    flex: 2;
+    list-style: none;
+    display: inline-block;
+    margin: 0 1.3rem;
+    position: relative;
+}
+
+#navbarNav ul li a {
+    padding: 0 0;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+} 
+
+ #navbarNav ul li ::after{
+    content :"";
+    height: 10%;
+    width: 0;
+    background:white;
+    position: absolute;
+    left: 0;
+    bottom: -1.0rem;
+    transition: 0.3s;} 
+
+    
+   
+      @media(max-width:998px) {
+        html {
+            font-size: 75%;
+          
+        }
+     
+
+    }
+    @media(max-width:768px) {
+        html {
+            font-size: 65%;
+           
+        }
+        
+    }  
+ 
+
+.navbar-toggler {
+  width: 60px;
+  padding: 0;
+  position: absolute;
+  right: 5%;
+}
